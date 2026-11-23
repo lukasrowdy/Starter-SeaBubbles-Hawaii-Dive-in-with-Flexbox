@@ -39,6 +39,8 @@ a {
 
 .hero img {
     display: block;
+    width: 100%;
+    height: auto;
 }
 
 /* Supplied hero headline and call to action; no lab changes needed. */
