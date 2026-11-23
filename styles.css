@@ -105,6 +105,8 @@ h3 {
 
 .course-card {
     flex-basis: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -126,6 +128,7 @@ h3 {
 }
 
 .course-card .button {
+    margin-top: auto;
     display: inline-block;
     background: #1565a8;
     color: white;
@@ -176,4 +179,18 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+}
+
+/* At the medium breakpoint, two cards share each row and grow into spare space. */
+@media (min-width: 768px) {
+    .course-card {
+        flex-basis: 40%;
+    }
+}
+
+/* At the large breakpoint, four cards fit with room for the three gaps. */
+@media (min-width: 992px) {
+    .course-card {
+        flex-basis: 20%;
+    }
 }
