@@ -142,3 +142,19 @@ h3 {
 /* Steps 11–13: Add the course-grid container, then card declarations inside the existing .course-card rule. */
 /* Step 15: Add footer layout declarations inside the existing .contact rule (Step 14 adds the PDF link in index.html). */
 /* Steps 16–19: Add the media queries at the bottom of the file; Steps 17 and 19 add declarations to existing rules. */
+
+/* Arrange the brand and navigation, keeping a minimum gap when space is tight. */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* Space the navigation links independently and let them wrap on small screens. */
+.site-nav {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
